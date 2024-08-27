@@ -1,5 +1,8 @@
 # Basic-WebServer-NodeJS-V1
 
+If view in github page using this [Link](https://happy7.xyz/Basic-WebServer-NodeJS-V1/public/), view index.html
+If view in github page using this [Link](https://happy7.xyz/Basic-WebServer-NodeJS-V1/public/404.html), view 404.html
+
 ### Requirements
 
 This project requires:
