@@ -1,0 +1,131 @@
+<!-- 
+
+    Author: Happyuky7
+    GitHub: https://github.com/Happyuky7/Basic-WebServer-NodeJS-V1
+    Last Update: 2024/08/26 (YYYY/MM/DD)
+    Description: A basic web server using Node.js, using the express module.
+    License: Custom Licens
+
+    -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic WebServer NodeJS</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #292929;
+        }
+
+        h1 {
+            color: #30ff9e;
+        }
+
+        h2 {
+            color: #30ff9e;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        a {
+            color: #30ff9e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #8df364;
+        }
+
+        #logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #logos img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        #date {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            #logos img {
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+            }
+
+            #date {
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="logos">
+        <img src="https://nodejs.org/static/images/logo.svg" alt="NodeJS logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="ExpressJS logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo">
+    </div>
+
+    <h1>Basic WebServer NodeJS</h1>
+    <p>This is a basic web server using <a href="https://nodejs.org/en/">Node.js</a>, using the <a href="https://expressjs.com/">express</a> module.</p>
+    <p>You can find the source code on <a href="https://github.com/Happyuky7/Basic-WebServer-NodeJS-V1">Github</a></p>
+    <p>Author: <a href="https://github.com/Happyuky7/">Happyuky7</a></p>
+    
+    <h2>Current Date and Time:</h2>
+    <span id="date"></span>
+
+    <script>
+        const date = new Date();
+        document.getElementById('date').innerHTML = date;
+        setInterval(() => {
+            const newDate = new Date();
+            document.getElementById('date').innerHTML = newDate;
+        }, 1000);
+    </script>
+
+</body>
+</html>
